@@ -215,7 +215,7 @@ fn touchhle_should_use_landscape_touch_remap(env: &Environment) -> bool {
         "at.source.veggie1"
         | "at.source.potato3D"
         | "at.source.potpan"
-        | "com.robtop.geometryjump" => true,
+        | "com.robtop.geometryjjjjjump" => true,
 
         // TomatoZombie is native portrait.
         "at.source.tomzom" => false,
@@ -273,7 +273,7 @@ fn touchhle_cocos_remap_point(env: &mut Environment, view: id, point: CGPoint) -
             "at.source.veggie1"
             | "at.source.potato3D"
             | "at.source.potpan"
-            | "com.robtop.geometryjump" => "scale".to_string(),
+            | "com.robtop.geometryjjjjjump" => "scale".to_string(),
             _ => crate::env_var_cached!("TOUCHHLE_COCOS_TOUCH_MODE")
                 .or(crate::env_var_cached!("TOUCHHLE_UNITY_TOUCH_MODE"))
                 .or(crate::env_var_cached!("TOUCHHLE_ENGINE_TOUCH_MODE"))
@@ -1257,3 +1257,4 @@ fn handle_touches_up(env: &mut Environment, map: HashMap<FingerId, Coords>) {
 
     release(env, pool);
 }
+
